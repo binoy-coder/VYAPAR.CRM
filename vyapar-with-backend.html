@@ -209,7 +209,7 @@ const app = {
     
     async checkApiHealth() {
         try {
-            const response = await fetch(`${API_URL}/health`);
+            const response = await fetch(`${API_BASE_URL}/api/health`);
             if (response.ok) {
                 document.getElementById('apiStatus').className = 'api-status connected';
                 document.getElementById('apiStatus').textContent = '✓ Connected';
@@ -224,9 +224,9 @@ const app = {
     async loadData() {
         try {
             const [products, customers, invoices] = await Promise.all([
-                fetch(`${API_URL}/products`).then(r => r.json()),
-                fetch(`${API_URL}/customers`).then(r => r.json()),
-                fetch(`${API_URL}/invoices`).then(r => r.json())
+                fetch(`${API_BASE_URL}/api/products`).then(r => r.json()),
+                fetch(`${API_BASE_URL}/api/customers`).then(r => r.json()),
+                fetch(`${API_BASE_URL}/api/invoices`).then(r => r.json())
             ]);
             this.products = products;
             this.customers = customers;
