@@ -4,6 +4,7 @@
   "description": "Vyapar - Bharat's Smart Business CRM & ERP System",
   "main": "server.js",
   "scripts": {
+    "build:frontend": "node -e \"console.log('Static frontend ready for deployment')\"",
     "start": "node server.js",
     "dev": "nodemon server.js"
   },

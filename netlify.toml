@@ -1,8 +1,7 @@
 # Netlify Deployment Configuration for Vyapar CRM Frontend
 
 [build]
-  publish = "dist"
-  command = "npm run build:frontend"
+  publish = "."
 
 [[headers]]
   for = "/*"
