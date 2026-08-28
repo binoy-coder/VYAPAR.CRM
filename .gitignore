@@ -1,0 +1,20 @@
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment local files
+.env
+.env.local
+
+# Runtime databases and test artifacts
+vyapar.db
+*.db-shm
+*.db-wal
+.test-data/
+dist/
+
+# OS Generated
+.DS_Store
+Thumbs.db
