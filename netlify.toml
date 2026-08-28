@@ -2,7 +2,7 @@
 
 [build]
   publish = "dist"
-  command = "npm run build:frontend"
+  command = "npm run build"
 
 [[headers]]
   for = "/*"
